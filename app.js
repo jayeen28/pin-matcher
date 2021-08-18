@@ -25,5 +25,6 @@ document.getElementById('key-pad').addEventListener('click', function (event) {
         if (newKeyInput.length > 4) {
             return;
         }
+        keyInput.value = newKeyInput;
     }
 });
