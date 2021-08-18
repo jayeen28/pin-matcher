@@ -42,3 +42,9 @@ function verifyPin() {
         successMessageClasses.add('d-none');
     }
 }
+function removeTypedWord() {
+    const typed = document.getElementById('key-input');
+    const typedText = typed.value;
+    const slice = typedText.slice(0, -1);
+    typed.value = slice;
+}
