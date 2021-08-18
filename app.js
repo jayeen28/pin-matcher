@@ -28,3 +28,15 @@ document.getElementById('key-pad').addEventListener('click', function (event) {
         keyInput.value = newKeyInput;
     }
 });
+function verifyPin() {
+    const pin = document.getElementById('generate-pin-input').value;
+    const typed = document.getElementById('key-input').value;
+    if (pin == typed) {
+        document.getElementById('success-notify').classList.remove('d-none');
+        document.getElementById('error-notify').classList.add('d-none');
+    }
+    else {
+        document.getElementById('error-notify').classList.remove('d-none');
+        document.getElementById('success-notify').classList.add('d-none');
+    }
+}
